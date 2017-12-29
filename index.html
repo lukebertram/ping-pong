@@ -2,16 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
-    <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
-    <script src="js/pingpong.js" charset="utf-8"></script>
+    <script src="build/js/vendor.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/app.js" charset="utf-8"></script>
     <title>Calcula-*BEEP*</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input type="number" id="goal">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
+    <div class="container">
+      <h1>The Weirdest Calculator Ever</h1>
+      <h3>Observe the time-ness!</h3>
+      <h3 id="time"></h3>
+      <form id="ping-pong-form">
+        <div class="form-group">
+          <label for="goal">Enter a number:</label>
+          <input type="number" id="goal">
+          <button class="btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+      <form id="signup">
+        <div class="form-group">
+          <label for="email">Enter your email:</label>
+          <input id="email" type="text">
+          <button class="btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+      <ul id="solution"></ul>
+    </div>
   </body>
 </html>
